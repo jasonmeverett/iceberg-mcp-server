@@ -31,6 +31,10 @@ def get_schema() -> str:
     """
     return impala_tools.get_schema()
 
-if __name__ == "__main__":
+def main():
+    """Main entry point for the server."""
     # Initialize and run the server
     mcp.run(transport='stdio')
+
+if __name__ == "__main__":
+    main()
